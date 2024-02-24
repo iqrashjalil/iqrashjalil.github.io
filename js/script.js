@@ -20,7 +20,7 @@ navlinks.forEach(link => {
 
         // Add the 'active' class to the clicked link
         link.classList.add('active');
-        link.style.color = '#0ef'; // Change color to #0ef
+        link.style.color = 'orangered'; // Change color to #0ef
 
         // Scroll to the section corresponding to the clicked link
         let targetId = link.getAttribute('href').substring(1); // Remove the '#' character
@@ -55,7 +55,7 @@ window.addEventListener('scroll', () => {
             });
 
             link.classList.add('active');
-            link.style.color = '#0ef'; // Change color to #0ef
+            link.style.color = 'orangered'; // Change color to #0ef
         } else {
             link.classList.remove('active');
             link.style.color = ''; // Reset color
@@ -63,10 +63,14 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
+
+
+
 // Initial state: reset colors
 navlinks.forEach(link => {
     if (link.classList.contains('active')) {
-        link.style.color = '#0ef'; // Set color to #0ef for the active link
+        link.style.color = 'orangered'; // Set color to #0ef for the active link
     } else {
         link.style.color = ''; // Reset color for other links
     }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
 *{
  margin: 0;
  padding: 0;
@@ -16,7 +20,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef
+    --main-color: orangered
 }
 
 html{
@@ -155,6 +159,36 @@ span{
 
 }
 
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+
+.skills-right{
+    /* background-color: blue; */
+    width:  40%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.skills-right span{
+    
+    font-size: 5rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: orangered;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .about-img{
     width: 35vw;
 }
@@ -181,48 +215,7 @@ span{
     margin: 2rem 0 3rem;
 }
 
-.services h2{
-    margin-bottom: 5rem;
-}
 
-.services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
-}
-
-.services-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-
-.services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
-
-}
-
-.services-box h3{
-    font-size: 2.6rem;
-
-}
-
-.services-box p{
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-}
 
 .portfolio{
     background: var(--second-bg-color);
@@ -355,7 +348,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 
 }
 
@@ -456,6 +449,20 @@ span{
     .about{
         flex-direction: column-reverse;
     }
+    .skills{
+        
+        flex-direction: column-reverse;
+    }
+    
+    .skills-right{
+        /* background-color: blue; */
+        width:  70%;
+        
+        display: grid;
+        /* background-color: blue; */
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
     .home-img img{
         width: 70vw;
     }
@@ -520,3 +527,24 @@ span{
         margin-top: 2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
